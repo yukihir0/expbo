@@ -1,0 +1,12 @@
+{
+  "name": "go_atcoder",
+  "dockerComposeFile": ["../docker/docker-compose.yml", "./docker-compose.yml"],
+  "service": "expbo",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": ["golang.go"]
+    }
+  },
+  "postCreateCommand": "git config --system --add safe.directory /workspace"
+}
